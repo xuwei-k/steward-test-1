@@ -7,6 +7,6 @@ scalafixDependencies ++= {
     case "3" =>
       Nil
     case _ =>
-      Seq("com.github.xuwei-k" %% "scalafix-rules" % "0.3.2")
+      Seq("com.github.xuwei-k" %% "scalafix-rules" % "0.3.4")
   }
 }
