@@ -1,12 +1,5 @@
-scalaVersion := "2.13.12"
+scalaVersion := "2.13.15"
 
-crossScalaVersions += "3.3.1"
+crossScalaVersions += "3.3.4"
 
-scalafixDependencies ++= {
-  scalaBinaryVersion.value match {
-    case "3" =>
-      Nil
-    case _ =>
-      Seq("com.github.xuwei-k" %% "scalafix-rules" % "0.3.2")
-  }
-}
+scalafixDependencies += "com.github.xuwei-k" % "scalafix-rules_2.13" % "0.4.4"
